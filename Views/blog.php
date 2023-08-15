@@ -80,7 +80,7 @@ $data = $database->getTable_S($blogId) ;
         <?php echo $data["headline"] ?>
       </h1>
       <div class="w-full flex items-center justify-center">
-      <img src="../Assets/<?php echo $data["image_name"] ?>" alt="" class="my-3 rounded-sm border border-neutral-300 shadow-xl" data-aos="fade-up" data-aos-delay="500">
+      <img src="../Uploads/<?php echo $data["image_name"] ?>" alt="" class="my-3 rounded-sm border border-neutral-300 shadow-xl" data-aos="fade-up" data-aos-delay="500">
       </div>
       <p class="text-justify" data-aos="fade-up" data-aos-delay="1000">
         <?php echo $data["main_news"] ?>

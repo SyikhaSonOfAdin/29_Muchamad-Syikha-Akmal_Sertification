@@ -33,17 +33,11 @@ class FromToDatabase
         $targetFile = $targetDir . basename($_FILES[$paramName]["name"]); // Path lengkap file yang diupload
         $uploadOk = 1; // Flag untuk memeriksa apakah file bisa diupload
 
-        // Cek apakah file sudah ada
-        if (file_exists($targetFile)) {
-            echo "File sudah ada.";
-            $uploadOk = 0;
-        }
-
-        // Batasan ukuran file (misalnya 2MB)
-        if ($_FILES[$paramName]["size"] > 2000000) {
-            echo "Ukuran file terlalu besar.";
-            $uploadOk = 0;
-        }
+        // // Cek apakah file sudah ada
+        // if (file_exists($targetFile)) {
+        //     echo "File sudah ada.";
+        //     $uploadOk = 0;
+        // }
 
         // Memeriksa jenis file (misalnya hanya gambar)
         $allowedTypes = array("jpg", "jpeg", "png", "gif");
@@ -100,10 +94,10 @@ class FromToDatabase
     public function deleteBlog(int $id)
     {
         $this->conn = $this->database->connection();
-        $file = $this->imgFilePath($id) ;
-        if (file_exists($file)) {
-            unlink($file) ;
-        }
+        // $file = $this->imgFilePath($id) ;
+        // if (file_exists($file)) {
+        //     unlink($file) ;
+        // }
         $query = "DELETE FROM {$this->table} WHERE id = $id";
         mysqli_query($this->conn, $query);
         return header('Location: ../Views/admin.php');

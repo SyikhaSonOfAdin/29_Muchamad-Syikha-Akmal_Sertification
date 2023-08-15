@@ -19,7 +19,7 @@ if (isset($_POST["gettingDashboard"])) {
     while ($data = mysqli_fetch_assoc($result)) {
         if ($i == 0) {
             $response .= '<a href="blog.php?id=' . $data["id"] . '" class="w-full flex flex-col" data-aos="fade-up" data-aos-delay="1000">
-            <img src="../Assets/' . $data["image_name"] . '" alt="" class="rounded-sm border border-neutral-300 shadow-xl">
+            <img src="../Uploads/' . $data["image_name"] . '" alt="" class="rounded-sm border border-neutral-300 shadow-xl">
             <h1 class="text-gray-900 uppercase font-bold md:text-xl lg:text-xl" data-aos="fade-up" data-aos-delay="1100">
               ' . $data["headline"] . '
             </h1>
@@ -27,7 +27,7 @@ if (isset($_POST["gettingDashboard"])) {
           <div class="w-full py-6 mt-6 border-t border-t-neutral-300 justify-between flex flex-wrap" data-aos="fade-up" data-aos-delay="1500">' ;
         } else {
             $response .= '<a href="blog.php?id=' . $data["id"] . '" class="w-[48%] flex flex-col" data-aos="fade-up" data-aos-delay="500">
-            <img src="../Assets/' . $data["image_name"] . '" alt="" class="rounded-sm border border-neutral-300">
+            <img src="../Uploads/' . $data["image_name"] . '" alt="" class="rounded-sm border border-neutral-300">
             <h1 class="text-gray-900 uppercase font-bold md:text-md" >
               ' . $data["headline"] . '
             </h1>
