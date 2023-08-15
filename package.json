@@ -1,0 +1,23 @@
+{
+  "name": "29-muchamad-syikha-akmal",
+  "version": "1.0.0",
+  "description": "Final Test for Sertification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind" : "npx tailwindcss -i ./src/tailwind-src.css -o ./dist/tailwind-output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyikhaSonOfAdin/29_Muchamad-Syikha-Akmal_Sertification.git"
+  },
+  "author": "Muchamad Syikha Akmal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyikhaSonOfAdin/29_Muchamad-Syikha-Akmal_Sertification/issues"
+  },
+  "homepage": "https://github.com/SyikhaSonOfAdin/29_Muchamad-Syikha-Akmal_Sertification#readme",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  }
+}
