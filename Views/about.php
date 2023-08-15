@@ -38,12 +38,12 @@ session_start() ;
   </div>
   <div class="w-full mt-2 flex items-center justify-center" data-aos="slide-down" data-aos-delay="200">
     <div class="w-full md:w-[90%] lg:w-1/2 font-semibold flex justify-evenly items-center text-sm">
-      <a href="./home.php" class="border border-neutral-300 p-2 px-4 rounded bg-blue-300/30 shadow-lg"
+      <a href="./home.php" class="border border-neutral-300 p-2 px-4 rounded"
         data-aos="fade-up">
         Home
       </a>
       <?php if (isset($_SESSION['login'])) : ?>
-      <a href="./about.php" class="border border-neutral-300 p-2 px-4 rounded" data-aos="fade-up" data-aos-delay="800">
+      <a href="./about.php" class="border border-neutral-300 p-2 px-4 rounded bg-blue-300/30 shadow-lg" data-aos="fade-up" data-aos-delay="800">
         About
       </a>
       <a href="./admin.php" class="border border-neutral-300 p-2 px-4 rounded" data-aos="fade-up" data-aos-delay="800">
@@ -53,7 +53,7 @@ session_start() ;
         Logout
       </a>
       <?php else : ?>
-      <a href="./about.php" class="border border-neutral-300 p-2 px-4 rounded" data-aos="fade-up" data-aos-delay="800">
+      <a href="./about.php" class="border border-neutral-300 p-2 px-4 rounded bg-blue-300/30 shadow-lg" data-aos="fade-up" data-aos-delay="800">
         About
       </a>
       <a href="./login.php" class="border border-neutral-300 p-2 px-4 rounded" data-aos="fade-up" data-aos-delay="500">

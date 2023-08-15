@@ -14,7 +14,7 @@ if (isset($_POST["gettingDashboard"])) {
 
     // MEMBUAT VARIABEL DENGAN VALUE SEPERTI BERIKUT GUNA RESPONSE DARI REQUEST
     $response = '<table class="w-full text-sm text-left text-gray-500">
-    <thead class="text-xs text-gray-100 uppercase bg-yellow-400">
+    <thead class="text-xs text-gray-100 uppercase bg-[#00458E]">
       <tr class="border-b border-b-gray-500">
         <th class="px-6 py-3"><span>No</span></th>
         <th class="px-6 py-3"><span>Headline</span></th>
